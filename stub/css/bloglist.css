@@ -4,10 +4,9 @@
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 40px 10px 40px;
-    float:left;
+    margin: 10px 7%;
+    float: left;
     border-radius: 15px;
-    overflow: hidden;
 }
     
 .post-left {
@@ -20,20 +19,21 @@
     color: #000;
 }
 .post-content {
-    width: 75%;           
+    width: 100%;           
     display: table-cell;
     text-align: left;
     background-color: #E8E8E8;
     color: #000000;
     border-radius: 0 15px 15px 0;
-    padding: 0 20px;      
+    padding: 0 20px;
 }
 .post-title{
     font-family: 'Itim', cursive;
     font-weight: bold;
     color: #2b312b;
     font-size: 25px;
-    height: 25px;
+    //height: 25px;
+    padding: 5px;
 }
 .post-more {
     float: right;
@@ -45,8 +45,13 @@
     font-size: 30px;
 }
 .post-desc{
-    height: 100px;
+    display: block;
+    height: 3.5em;
+    width: 100;
     margin-bottom: 0 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
 }
 
 body {
@@ -58,6 +63,7 @@ body {
     background-color: orange;
     background-size: 2000% 2000%;
 }
+
 .allPostsContainer {
     height: 100%;
     width: 100%;
@@ -65,4 +71,53 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.trash {
+    float: right;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.delete-modal {
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.delete-modal-content {
+    color: black;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Abel';
+    z-index: 2;
+}
+.delete-modal-content p {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.btn {
+    padding: 12px 10px;
+    width: 30%;
+    margin: 0px 10px;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+.btn-Yes {
+    background-color: #F5564A;
+}
+.btn-No {
+    background-color: #5EB762;
 }

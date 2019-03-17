@@ -37,8 +37,9 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 .modal {
     display: block;
     position: fixed;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -56,6 +57,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     padding: 15px;
     position: relative;
     color: black;
+    z-index: 2;
 }
 .modal-header {
     display: flex;

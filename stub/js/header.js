@@ -1,19 +1,27 @@
-document.getElementById('signInModal').style.display = 'none';
-document.getElementById('signUpModal').style.display = 'none';
+var signIn = document.getElementById('signInModal');
+var signUp = document.getElementById('signUpModal');
+signIn.style.display = 'none';
+signUp.style.display = 'none';
 
 function signUpModal() {
-    document.getElementById('signUpModal').style.display = 'flex';
+    signUp.style.display = 'flex';
     hideSignInModal();
 }
 function hideSignUpModal() {
-    document.getElementById('signUpModal').style.display = 'none';
+    signUp.style.display = 'none';
 }
 
 
 function signInModal() {
-    document.getElementById('signInModal').style.display = 'flex';
+    signIn.style.display = 'flex';
     hideSignUpModal();
 }
 function hideSignInModal() {
-    document.getElementById('signInModal').style.display = 'none';
+    signIn.style.display = 'none';
+}
+window.onclick = function(event) {
+    if(event.target == signIn || event.target == signUp) {
+        hideSignInModal();
+        hideSignUpModal();
+    }
 }

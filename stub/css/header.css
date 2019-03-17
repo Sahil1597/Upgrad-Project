@@ -1,0 +1,122 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.logo > h1 {
+    font-family: 'Satisfy';
+    color: #1230B4;
+    margin: 5px;
+    font-size: 3em;
+}
+.logo > span {
+    font-family: 'Marck Script';
+    margin: 5px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+}
+.button1 {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.modal {
+    display: block;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.modal-content {
+    background-color: white;
+    width: 350px;
+    min-height: 50vh;
+    font-family: 'Abel';
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+    color: black;
+}
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 2em;
+    width: 100%;
+    padding: 5px 0px;
+}
+.close {
+    cursor: pointer;
+}
+.title {
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+.modal-body {
+    width: 100%;
+    padding: 5px 0px;
+    overflow: auto;
+}
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.modal-body label {
+    font-weight: 600;
+}
+.modal-body input {
+    padding: 10px;
+    margin: 5px 0px 15px;
+    background-color: #F1F1F1;
+    color: #B6ABA4;
+    border: 0px;
+}
+.modal-body input:focus {
+    background-color: #DDDDDD;
+}
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+}
+.modal-footer button {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 10px;
+    color: white;
+    background-color: #5EB762;
+    border: 0px;
+}
+.modal-footer p {
+    font-family: 'Arial';
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-top: 30px
+}
+.modal-footer span {
+    color: blue;
+    cursor: pointer;
+}
